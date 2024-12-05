@@ -1,0 +1,98 @@
+
+.navbar-light ,.navbar-nav ,.nav-link {
+    color: #2C3093 !important;
+  }
+  .nav-link:hover{
+    color: #2c2f9344 !important ;
+  }
+  .scroll {
+    background-color: white;
+    transition: background-color 0.5s linear;
+  }
+
+  .background-container {
+    background-image: url('https://wallpaperaccess.com/full/1393343.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 2s ease-in;  /* Smooth fade-in effect */
+}/* When this class is added, it triggers the fade-in */
+.background-container.fade-in {
+            opacity: 1;  /* Fully visible */
+}
+
+.dissolve{
+    background-color: #c9b8b894;
+    transition: all ease-in 2s; 
+}
+
+.navbar-toggler {
+    border: none; /* Remove default border */
+    background: transparent; /* Remove background */
+    padding: 0; /* Remove padding */
+}
+.transformMenuButton{
+   background-color: green;
+}
+#companyName{
+    color: #2C3093;
+    font-size: 100px;
+}
+#companyDetails{
+    color: white;
+}
+#companyName:hover{
+    color: white;
+    transition: color 1s;
+}
+#background2{
+    width: 100%;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    #companyName{
+        font-size: 50px;
+    }
+    #navbar{
+        background-color: transparent !important;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 1240px) {
+    #contactSection{
+        height: 800px !important;
+    }
+    #contact1{
+        height: 200px !important;
+        margin: 100px;
+    }
+  }
+.cardSection1 {
+    color: #2C3093;
+    transform: translateX(-200%); /* Start off the screen */
+    animation: slideIn 1s ease-in-out 1s forwards; /* Animation with 1s delay */
+}
+
+
+
+.cardSection2 {
+    color: #2C3093;
+    transform: translateX(200%); /* Start off the screen */
+    animation: slideIn 1s ease-in-out 1s forwards; /* Animation with 1s delay */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* End position is the center */
+    }
+}
+
+
+#thirdSection{
+    background-color: #2C3093;
+}

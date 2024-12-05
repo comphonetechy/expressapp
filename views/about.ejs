@@ -1,0 +1,16 @@
+
+<%- include('partials/header')%>
+<%- include('partials/navigation')%>
+<%- include('partials/topblocker')%>
+
+<div class="container">
+    <h1><em><%= content['page_description'] %></em></h1>
+    <ul>
+        <% for (let key in content['lorem_collections']) { %>
+            <li><strong><%= key %>:</strong> <%= content['lorem_collections'][key] %></li>
+        <% } %>
+    </ul>
+</div>
+
+<%- include('partials/footer')%>
+
